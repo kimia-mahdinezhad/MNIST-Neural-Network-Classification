@@ -49,10 +49,12 @@ Subsequently, the following performance parameters for the best model on the tes
 - ROC curve for each class in the form of "Rest vs One" is provided for classes 0 and 9.
 
 ROC curve diagram for digit 0 compared to other digits and ROC curve diagram for digit 9 compared to other digits are included.
-# 1
+![](https://github.com/kimia-mahdinezhad/MNIST-Neural-Network-Classification/blob/main/Media/1.png)
+![](https://github.com/kimia-mahdinezhad/MNIST-Neural-Network-Classification/blob/main/Media/2.png)
 
 The Learning curve graph contains Accuracy values for each epoch, while the Loss values for each epoch are shown in the Loss curve.
-# 2
+![](https://github.com/kimia-mahdinezhad/MNIST-Neural-Network-Classification/blob/main/Media/3.png)
+![](https://github.com/kimia-mahdinezhad/MNIST-Neural-Network-Classification/blob/main/Media/4.png)
 
 ## Part II
 
@@ -73,7 +75,7 @@ To identify these categories, the states of the first part of the model that wer
 - The number 8 is most frequently classified as the number 2.
 - The number 9 is primarily identified as the number 4.
 
-# 3
+![](https://github.com/kimia-mahdinezhad/MNIST-Neural-Network-Classification/blob/main/Media/5.png)
 
 For model creation, all samples of digits 0 to 4 are grouped as train data, and digits 5 to 9 as test data. The previous model is trained on this new data. This division is specific to this example to avoid the model learning certain classes. The results of applying the model to the selected dataset are displayed in the images. However, since no data from classes 5 to 9 were included in the training data, the accuracy for these classes is zero. 
 
@@ -83,6 +85,6 @@ For model creation, all samples of digits 0 to 4 are grouped as train data, and 
 - The number 8 is primarily identified as the number 3.
 - The number 9 is mostly identified as the number 4.
 
-# 4
+![](https://github.com/kimia-mahdinezhad/MNIST-Neural-Network-Classification/blob/main/Media/6.png)
 
 The key issue with the examined model is its inability to accurately identify classes 5 to 9. It mistakenly assumes these numbers are similar to the ones it saw during training. To address this problem and enhance class detection and the declaration of uncertainty in classifying, it's possible to assign another class to unknown data. A threshold can be applied to determine whether or not to classify data into a certain class. This approach can improve the model's accuracy and reliability, especially for unseen data.
